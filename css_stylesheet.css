@@ -1,9 +1,13 @@
 body {
 		background-image: url("sugar_skull_image.jpg");
+		
+}
+div{
 		border-style:ridge;
 		border-width: 5%;
 		border-color: lavender;
 		background-color: lightblue;
+
 }
 h1 {
 		font-family: "Times New Roman", Times, serif;
