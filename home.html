@@ -1,0 +1,34 @@
+<header>
+<script type = "text/javascript">
+function checkvalue() { 
+    var mystring = document.getElementById('myString').value; 
+    if(!mystring.match(/\S/)) {
+        alert ('Empty value is not allowed');
+        return false;
+    } else {
+        return true;
+    }
+}
+</script>
+  <link rel="stylesheet" type="text.css" href="databasestyle.css">
+  <title>Music Database</title>
+</header>
+<body>
+<script type="text/javascript" src="http://javascriptbestcodes.com/codes/rain.js"></script>
+</body>
+</html><a target="_blank" href="http://piezomems.com" style="text-decoration:none;bottom:0;left:10px;font-size:5pt;color:gray;position:absolute">piezo mems</a>
+<p>
+<div class = "box">
+<h2>
+<form action="results_page.php" onsubmit="return checkvalue(this)">
+<input type="text" name="input" value="" id = "myString">
+<input type="radio" name="table" value="Album" checked = "checked">Album
+<input type="radio" name="table" value="Band">Band
+<input type="radio" name="table" value="Song">Song
+<br>
+<input type="submit" value="Search">
+</form>
+</h2>
+</div>
+</p>
+</body>
